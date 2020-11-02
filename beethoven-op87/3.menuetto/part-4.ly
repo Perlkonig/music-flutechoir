@@ -24,9 +24,9 @@
 \score
 {
     %\new Staff \fourNotes
-    \new Staff \transpose c f \fourNotes
+    \new Staff \transpose f g \fourNotes
     \layout {
-        #(layout-set-staff-size 16)
+        #(layout-set-staff-size 20)
     }
     \midi {
         \tempo 2. = 60
