@@ -24,7 +24,7 @@
 \score
 {
     %\new Staff \fourNotes
-    \new Staff \transpose f g \fourNotes
+    \new Staff \transpose g f \fourNotes
     \layout {
         #(layout-set-staff-size 20)
     }
