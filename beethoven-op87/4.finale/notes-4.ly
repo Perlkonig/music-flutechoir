@@ -1,21 +1,23 @@
 fourNotes = \relative c'' {
     \time 2/4
     \key g \major
-    \tempo 4 = 144
+    \tempo 2 = 75
     \clef "treble"
 
     \set Score.markFormatter = #format-mark-box-alphabet
+    \accidentalStyle Score.modern-cautionary
+    \compressFullBarRests
 
     % Bars 1-10
     \partial 8 r8 |
     r2 |
-    r8 g-. g'-. r |
+    r8 g-.\p g'-. r |
     r2 |
     r8 g,-. g'-. r |
     r2 |
     r4 r8 g-. |
     fis4 -. g-. |
-    d r8 b-. |
+    d r8 b-.\f |
     c-. b-. c-. a-. |
     b4 r8 d-. |
 
@@ -26,7 +28,7 @@ fourNotes = \relative c'' {
     g-. a-. b-. c,-. |
     d4-. d,-. |
     g r | \mark \default
-    r r8 d'-. |
+    r r8 d'-.\p |
     d-. d-. d-. r |
     r4 r8 g,-. |
 
@@ -42,11 +44,11 @@ fourNotes = \relative c'' {
 
     % Bars 28-36
     g8-. fis-. g-. r |
-    r4 b8-. a-. |
+    r4 b8-.\f a-. |
     g-. fis-. e-. d-. |
     c-. a-. d-. d,-. |
     g4 r | \mark \default
-    r8 e'( g) r |
+    r8 e'(\p g) r |
     r fis( a) r |
     r e( g) r |
     r dis( fis) r |
@@ -55,7 +57,7 @@ fourNotes = \relative c'' {
     e8 r e r |
     b r g r |
     fis r e r |
-    b' dis( e fis) |
+    b' dis(\p e fis) |
     e-. e( g) r |
     r fis( a) r |
     r e( g) r |
@@ -66,7 +68,7 @@ fourNotes = \relative c'' {
     c r a r |
     fis r b r |
     e,4 r | \mark \default
-    g r |
+    g\p r |
     a r |
     fis fis |
     g r |
@@ -93,7 +95,7 @@ fourNotes = \relative c'' {
 
     % Bars 71-80
     g4 r |
-    r r8 b | \mark \default
+    r r8 b\p | \mark \default
     e4 r8 b |
     dis 4 r8 b |
     e4 r8 b |
@@ -108,18 +110,18 @@ fourNotes = \relative c'' {
     r fis( a) r |
     r e( g) r |
     r dis( fis) r |
-    e r e r |
+    e r e r\f |
     c r a r |
     fis r b r |
     e,4 r |
 
     % Bars 89-97
-    g8 r e r |
+    g8\pp r e r |
     \mark "calando" c r d r |
     b r cis r |
     d4.\fermata r8 | \mark \default
     r2 \mark "a tempo" |
-    r8 g-. g'-. r |
+    r8 g-.\p g'-. r |
     r2 |
     r8 g,-. g'-. r | 
     r2 |
@@ -127,7 +129,7 @@ fourNotes = \relative c'' {
     % Bars 98-107
     r4 r8 g-. |
     fis4 -. g-. |
-    d r8 b-. |
+    d r8 b-.\f |
     c-. b-. c-. a-. |
     b4 r8 d-. |
     e-. d-. e-. c-. |
@@ -137,7 +139,7 @@ fourNotes = \relative c'' {
     d4 d, |
 
     % Bars 108-117
-    g4 r8 g | \mark \default
+    g4 r8 g\p | \mark \default
     c2( |
     e |
     g |
@@ -160,10 +162,10 @@ fourNotes = \relative c'' {
     d) |
     r8 fis( g fis) |
     g4 r | \mark \default
-    r2 | r2 | r2 | r2 | 
+    R2*4 
 
     % Bars 133-143
-    c,2( |
+    c,2(\p |
     e |
     g |
     f) |
@@ -180,7 +182,7 @@ fourNotes = \relative c'' {
     e( d cis d) |
     r8 d,( e fis) |
     g( fis g fis) |
-    g4 r8 g | \mark \default
+    g4 r8 g\p | \mark \default
     f'2( |
     d |
     b4.) g8( |
@@ -192,16 +194,16 @@ fourNotes = \relative c'' {
     b4.) g8( |
     b g b d) |
     f2( |
-    e |
+    e\< |
     b |
     c |
-    f, |
+    f,\> |
     fis |
-    g4) r |
+    g4)\! r |
     r2 | \mark \default
 
     % Bars 165-176
-    r4 g8( a |
+    r4 g8(\p a |
     b c d e) |
     f2( |
     d |
@@ -211,13 +213,13 @@ fourNotes = \relative c'' {
     d |
     b |
     c |
-    f, |
+    f,\< |
     fis |
     
     % Bars 177-186
-    g2~ |
+    g2~\> |
     g2 |
-    c,4) g'( |
+    c,4)\! g'(\p |
     f g |
     e g |
     b g) |
@@ -233,7 +235,7 @@ fourNotes = \relative c'' {
     fis,-. d'-. |
     r4.\fermata r8 | \mark \default
     r2 | \mark "a tempo"
-    r8 g,-. g'-. r |
+    r8 g,-.\p g'-. r |
     r2 |
     r8 g,-. g'-. r |
     r2 |
@@ -241,7 +243,7 @@ fourNotes = \relative c'' {
     % Bars 197-206
     r4 r8 g-. |
     fis4 -. g-. |
-    d4 r8 b-. |
+    d4 r8 b-.\f |
     c-. b-. c-. a-. |
     b4 r8 d-. |
     e-. d-. e-. c-. |
@@ -252,27 +254,27 @@ fourNotes = \relative c'' {
 
     % Bars 207-215
     g4 r | \mark \default
-    r4 r8 d'-. |
+    r4 r8 d'-.\p |
     d-. d-. d-. r |
     r4 r8 g,-. |
     g-. g-. g-. r |
     r4 b'8-. a-. |
     g-. fis-. e-. d-. |
     cis-. b-. cis-. a-. |
-    d4 r8 d,( |
+    d4 r8 d,(\p |
     
     % Bars 216-222
     fis8 a d) cis-. |
     d-. cis-. d-. g,( |
     b d g) fis-. |
     g-. fis-. g-. r |
-    r4 b8-. a-. |
+    r4 b8-.\f a-. |
     g-. fis-. e-. d-. |
     c-. a-. d-. d,-. |
 
     % Bars 223-234
     g4 r | \mark \default
-    g r |
+    g\f r |
     a r |
     fis fis |
     g r |
@@ -294,12 +296,12 @@ fourNotes = \relative c'' {
     c c |
     b r |
     b g |
-    e4.~\fermata e8 |
+    e4.~\fermata\fp e8 |
     e'4.\fermata r8 | \mark \default
     r2
     
     % Bars 247-256
-    r4 r8 d,8 |
+    r4 r8 d,\pp |
     c'2( |
     a |
     fis4.) d8( |
@@ -316,17 +318,17 @@ fourNotes = \relative c'' {
     d cis d) d |
     g4 d8( e |
     fis g a b) | \mark \default
-    c4 c( |
-    a) a( |
+    c4 c(\sf |
+    a) a(\sf |
     fis4.) d8( |
     fis d fis a) |
 
     % Bars 266-275
-    c4 c( |
-    a) a( |
+    c4 c(\sf |
+    a) a(\sf |
     fis4.) d8( |
     fis d fis a) |
-    c2( |
+    c2(\p\< |
     b |
     d |
     c |
@@ -334,11 +336,11 @@ fourNotes = \relative c'' {
     d) |
 
     % Bars 276-286
-    c4 c, |
+    c4\sf\> c, |
     d d' | \mark \default
-    g, r |
-    r2 | r2 | r2 |
-    r4 r8 b-. |
+    g,\! r |
+    R2*3
+    r4 r8 b-.\f |
     c-. d-. e-. fis-. |
     g a b gis |
     a gis a fis |
@@ -346,40 +348,40 @@ fourNotes = \relative c'' {
 
     % Bars 287-292
     fis8 e fis d |
-    e dis d c |
+    e dis e c |
     d cis d b |
     c b c d |
-    e dis e d |
+    e\sf dis e d |
     c b c d |
 
     % Bars 293-301
-    e8 dis e d |
+    e8\sf dis e d |
     c b c d |
-    e8 e4 e8 |
-    cis cis4 cis8 |
-    d2\fermata |
+    e8 e4\sf e8 |
+    cis cis4\sf cis8 |
+    d2\fermata\sf |
     c2\trill\fermata\grace {b16(c)} \mark \default
-    b4 r8 g |
+    b4\fp r8 g\p |
     a b c d |
-    e fis g b |
+    e fis g b\f |
 
     % Bars 302-310
     a8 g fis e |
-    d c b g |
+    d c b g\p |
     a b c d |
-    e fis g g, |
+    e fis g g,\f |
     g g g g |
     g g g d |
     g d g d |
-    g4 r8 b |
+    g4 r8 b\p |
     g4 r8 b |
 
     % Bars 311-END
     g4 r8 b' |
     g4 r8 b |
-    g8 g, g g |
+    g8 g,\f g g |
     g g g g |
     g g' d b |
     g g' d b |
-    g r8 \bar "|."
+    g4 r8 \bar "|."
 }

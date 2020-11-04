@@ -13,7 +13,7 @@
 \header {
     instrument = "Alto Flute"
     title = "Trio"
-    subtitle = "4. Finale"
+    subtitle = "4. Finale (Presto)"
     subsubtitle = "Transposition of English horn"
     opus = "Opus 87"
     composer = "Beethoven"
@@ -24,12 +24,12 @@
 \score
 {
     %\new Staff \fourNotes
-    \new Staff \transpose g f \fourNotes
+    \new Staff \transpose g bes \fourNotes
     \layout {
         #(layout-set-staff-size 20)
     }
     \midi {
-        \tempo 4 = 144
+        \tempo 2 = 75
     }
 }
 

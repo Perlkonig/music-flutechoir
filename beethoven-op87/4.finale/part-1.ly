@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-\include "notes-4.ly"
+\include "notes-1.ly"
 
 \paper {
   #(set-paper-size "letter")
@@ -11,10 +11,9 @@
 }
 
 \header {
-    instrument = "Alto Flute"
+    instrument = "Flute 1"
     title = "Trio"
-    subtitle = "3. Menuetto (Allegro molto, scherzo)"
-    subsubtitle = "Transposition of English horn"
+    subtitle = "4. Finale (Presto)"
     opus = "Opus 87"
     composer = "Beethoven"
     arranger = "arr. Aaron Dalton"
@@ -23,13 +22,13 @@
 
 \score
 {
-    %\new Staff \fourNotes
-    \new Staff \transpose g bes \fourNotes
+    %\new Staff \oneNotes
+    \new Staff \transpose c f \oneNotes
     \layout {
         #(layout-set-staff-size 20)
     }
     \midi {
-        \tempo 2. = 100
+        \tempo 2 = 75
     }
 }
 

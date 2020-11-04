@@ -1,5 +1,7 @@
 \version "2.20.0"
 
+\include "notes-1.ly"
+%\include "notes-2.ly"
 \include "notes-4.ly"
 
 \paper {
@@ -11,26 +13,26 @@
 }
 
 \header {
-    instrument = "Alto Flute"
     title = "Trio"
-    subtitle = "3. Menuetto (Allegro molto, scherzo)"
-    subsubtitle = "Transposition of English horn"
+    subtitle = "2. Adagio"
     opus = "Opus 87"
     composer = "Beethoven"
     arranger = "arr. Aaron Dalton"
     copyright = "Licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
 }
 
-\score
-{
-    %\new Staff \fourNotes
-    \new Staff \transpose g bes \fourNotes
+\score {
+    \new GrandStaff <<
+        \new Staff \transpose f bes \oneNotes
+        %\new Staff \twoNotes
+        \new Staff \transpose g f \fourNotes
+    >>
+
     \layout {
-        #(layout-set-staff-size 20)
+
     }
+
     \midi {
-        \tempo 2. = 100
+        \tempo 4 = 60
     }
 }
-
-
