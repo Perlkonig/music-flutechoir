@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \include "notes-1.ly"
-%\include "notes-2.ly"
+\include "notes-2.ly"
 \include "notes-4.ly"
 
 \paper {
@@ -24,7 +24,7 @@
 \score {
     \new GrandStaff <<
         \new Staff \transpose c f \oneNotes
-        %\new Staff \twoNotes
+        \new Staff \transpose c f \twoNotes
         \new Staff \transpose g f \fourNotes
     >>
 

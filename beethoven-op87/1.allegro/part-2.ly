@@ -1,8 +1,6 @@
 \version "2.20.0"
 
-\include "notes-1.ly"
 \include "notes-2.ly"
-\include "notes-4.ly"
 
 \paper {
   #(set-paper-size "letter")
@@ -13,6 +11,7 @@
 }
 
 \header {
+    instrument = "Flute 2"
     title = "Trio"
     subtitle = "1. Allegro"
     opus = "Opus 87"
@@ -21,18 +20,16 @@
     copyright = "Licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
 }
 
-\score {
-    \new GrandStaff <<
-        \new Staff \transpose c f \oneNotes
-        \new Staff \transpose c f \twoNotes
-        \new Staff \transpose g f \fourNotes
-    >>
-
+\score
+{
+    \new Staff \twoNotes
+    %\new Staff \transpose c f \twoNotes
     \layout {
-
+        #(layout-set-staff-size 20)
     }
-
     \midi {
-        \tempo 2 = 75
+        \tempo 2 = 78
     }
 }
+
+
