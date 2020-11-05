@@ -22,8 +22,8 @@
 
 \score
 {
-    \new Staff \twoNotes
-    %\new Staff \transpose c f \twoNotes
+    %\new Staff \twoNotes
+    \new Staff \transpose c f \twoNotes
     \layout {
         #(layout-set-staff-size 20)
     }
