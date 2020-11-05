@@ -14,7 +14,6 @@
     instrument = "Alto Flute"
     title = "Trio"
     subtitle = "1. Allegro"
-    subsubtitle = "Transposition of English horn"
     opus = "Opus 87"
     composer = "Beethoven"
     arranger = "arr. Aaron Dalton"
@@ -26,7 +25,7 @@
     %\new Staff \fourNotes
     \new Staff \transpose g bes \fourNotes
     \layout {
-        #(layout-set-staff-size 20)
+        #(layout-set-staff-size 18)
     }
     \midi {
         \tempo 2 = 78
