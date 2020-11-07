@@ -11,7 +11,7 @@
 }
 
 \header {
-    instrument = "Flute 1"
+    instrument = "Flute 2"
     title = "Trio"
     subtitle = "4. Finale (Presto)"
     opus = "Opus 87"
@@ -25,7 +25,7 @@
     %\new Staff \twoNotes
     \new Staff \transpose c f \twoNotes
     \layout {
-        #(layout-set-staff-size 20)
+        #(layout-set-staff-size 18)
     }
     \midi {
         \tempo 2 = 75

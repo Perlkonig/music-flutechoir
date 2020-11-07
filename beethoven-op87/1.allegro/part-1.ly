@@ -25,7 +25,7 @@
     %\new Staff \oneNotes
     \new Staff \transpose c f \oneNotes
     \layout {
-        #(layout-set-staff-size 20)
+        #(layout-set-staff-size 18)
     }
     \midi {
         \tempo 2 = 78
